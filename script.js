@@ -52,7 +52,7 @@ function addNote (note) {
 function createNoteDOM (note) {
 
   let outputDiv = document.createElement('div')
-  outputDiv.id = `_${note.id}`
+  outputDiv.id = `${note._id}`
   outputDiv.classList.add('notes__content')
   outputDiv.innerHTML = `<h1>${note.title}</h1> <p>${note.text}</p>`
 
@@ -70,6 +70,7 @@ function deleteNote (note) {
   request.delete(`https://notes-api.glitch.me/api/notes/${note._id}`)
     .auth('jeanetteobr', 'password')
     .then(response => {
-      document.getElementById(`_${note.id}`).remove()
+      console.log('hi')
+      document.getElementById(`${note._id}`).remove()
     })
 }
