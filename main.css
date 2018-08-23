@@ -1,0 +1,20 @@
+header {
+    margin: 0;
+    background-color: blue;
+    padding: 30px;
+
+}
+
+.container {
+    padding-top: 30px;
+}
+
+.notes__content p {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.notes__content h1 {
+    font-size: 26px;
+    font-weight: bold;
+}
